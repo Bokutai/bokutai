@@ -3,7 +3,7 @@
 fonts = (
 	('ascii', 0x20),
 	('font', 0x8000),
-	('font.ext', 0x8500),
+	# ('font.ext', 0x8500),
 )
 
 for font in fonts:
