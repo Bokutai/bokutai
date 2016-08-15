@@ -10,7 +10,7 @@ chartbl =  open('../font/font.tbl', 'r')
 
 tbl=dict()
 for line in chartbl.readlines():
-	k,v = line.strip().split('=',1)
+	k,v = line.strip().split('=', 1)
 	tbl[k] = v 
 
 text = ''

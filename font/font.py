@@ -8,10 +8,10 @@ draw = ImageDraw.Draw(image)
 font = ImageFont.truetype("FZShaoEr.ttf", 14)
 
 text = u'''
-存档 操作设定 上左右 上
+存档 操作方式 上左右 上
 睡眠 文字速度 普通快慢
 设定 标记 开关
-返回
+返回 确定 取消
 
 我们的太阳
 '''
