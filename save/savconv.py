@@ -5,10 +5,15 @@ Convert general GBA battery save to No$gba raw battery save
 
 todo: 
 	1.reverse convert
-	2.command arguments
 '''
 
-sav = open('boku.sav', 'r')
+import sys
+
+if len(sys.argv) < 3:
+	print 'Usage: python %s [input_save] [output_save]' % sys.argv[0]
+	exit()
+
+sav = open(sys.argv[1], 'r')
 savbin = sav.read()
 sav.close()
 
@@ -21,6 +26,6 @@ for i in range(len(savbin)/8):
 savbin += '\xFF'*(120*1024)
 
 
-nsav = open('bokutai.SAV', 'w+')
+nsav = open(sys.argv[2], 'wb')
 nsav.write(savbin)
 nsav.close()
