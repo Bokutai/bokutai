@@ -8,7 +8,7 @@ fonts = (
 
 for font in fonts:
 	pos = font[1]
-	font = open('../font/'+font[0]+'.txt', 'r')
+	font = open(font[0]+'.txt', 'r')
 	for line in font.readlines():
 		line = line.strip().decode('utf8')
 		for chart in line:

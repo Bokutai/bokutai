@@ -2,8 +2,8 @@
 
 sta = 0x0E2B72C
 end = 0x0E5231E
-rom = open('../crack/rom/bokutai.gba', 'r')
-# rom = open('../crack/rom/bokutai.tgb.gba', 'r')
+rom = open('../hack/rom/bokutai.gba', 'r')
+# rom = open('../hack/rom/bokutai.tgb.gba', 'r')
 textbin = rom.read()[sta: end] 
 chartbl =  open('../font/font.tbl', 'r')
 # chartbl = open('../font.tgb.tbl', 'r')
