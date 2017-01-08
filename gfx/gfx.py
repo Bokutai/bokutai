@@ -18,7 +18,6 @@ rom_bin = rom.read()
 rom.close()
 
 s,e = sys.argv[1].split(':', 2)
-print s,e
 s = int(s, 16)
 e = int(e, 16)
 
