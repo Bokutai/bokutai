@@ -65,4 +65,4 @@ for block in range(0, 4107):
 	nxt_ptr =  le_unpack(ptr_bin[(block+1)*4:(block+1)*4+3]) if block != 4106 else len(raw_script)
 	if ptr >= 0x80000000:
 		ptr -= 0x80000000
-		covert_script(raw_script[ptr:nxt_ptr], offset/4+1)
+		covert_script(raw_script[ptr:nxt_ptr], block+1)
